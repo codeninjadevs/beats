@@ -44,7 +44,9 @@ export default function Player() {
           <p className="text-center text-lg font-semibold mb-1">
             Employee Transfer
           </p>
-          <p className="text-center text-xs">Earwolf & Jenna Fischer</p>
+          <p className="text-center text-gray-400 text-xs">
+            Earwolf & Jenna Fischer
+          </p>
         </div>
         {/* Seekbar */}
         <div className="grid grid-cols-7 items-center py-5">
