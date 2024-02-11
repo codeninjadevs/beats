@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
-# Contributiors:
+# Contributors:
 <a href="https://github.com/codeninjadevs/beats/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=codeninjadevs/beats" />
 </a>
