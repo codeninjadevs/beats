@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Switch } from "antd";
 
 const menuItems = [
-  { label: "Explore" },
+  { label: "Explore"},
   { label: "Genres" },
   { label: "Albums" },
   { label: "Artist" },
