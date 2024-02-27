@@ -2,27 +2,7 @@
 "use client";
 import React, { useState } from "react";
 import { Switch } from "antd";
-
-const menuItems = [
-  { label: "Explore"},
-  { label: "Genres" },
-  { label: "Albums" },
-  { label: "Artist" },
-  { label: "Radio" },
-];
-
-const libraryItems = [
-  { label: "Recent" },
-  { label: "Albums" },
-  { label: "Favourites" },
-  { label: "Local" },
-];
-
-const playlistItems = [
-  { label: "Create New" },
-  { label: "Design Flow" },
-  { label: "Best of 2020" },
-];
+import { menuItems, libraryItems, customizeItems } from "./SidebarMenu.tsx";
 
 export default function Sidebar() {
   const [checked, setChecked] = useState(true);
@@ -50,9 +30,9 @@ export default function Sidebar() {
           </div>
         </div>
         <div>
-          <h2 className="mb-2">PLAYLIST</h2>
+          <h2 className="mb-2">CUSTOMIZE</h2>
           <div>
-            {playlistItems.map((item, idx) => (
+            {customizeItems.map((item, idx) => (
               <MenuItem key={idx} {...item} />
             ))}
           </div>
@@ -77,9 +57,10 @@ export default function Sidebar() {
   );
 }
 
-const MenuItem = ({ label }) => {
+const MenuItem = ({ label, icon }) => {
   return (
-    <div className="font-medium px-3 py-1.5 text-sm hover:bg-gray-200 rounded cursor-pointer">
+    <div className="flex items-center gap-3 font-medium px-3 py-1.5 text-sm hover:bg-gray-200 rounded cursor-pointer">
+      {icon}
       {label}
     </div>
   );
